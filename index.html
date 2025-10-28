@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discovery Blueprint: Creación de Marca para Restaurantes</title>
+    <!-- Título actualizado para el nuevo tipo de negocio -->
+    <title>Discovery Blueprint: Creación de Marca Gastronómica Saludable</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/html-docx-js/dist/html-docx.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <!-- 
+      SCRIPTS ELIMINADOS: 
+      Ya no se necesitan html-docx-js ni FileSaver.js
+    -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -19,7 +22,7 @@
             font-family: 'Playfair Display', serif;
         }
         .form-section {
-            border-left: 3px solid #E5E7EB;
+            border-left: 3px solid #E5E7EB; /* Ligeramente más sutil */
             padding-left: 1.5rem;
             margin-bottom: 3.5rem;
             padding-top: 1rem;
@@ -46,7 +49,7 @@
 
     <div class="container mx-auto max-w-4xl p-4 sm:p-8 bg-white shadow-xl rounded-lg my-8">
 
-        <!-- Header -->
+        <!-- Header (Se mantiene tu marca) -->
         <header class="text-center mb-12 border-b pb-8">
             <img src="https://i.postimg.cc/qRf76rwN/image-1.png" alt="Logo de Juan Luis Medero" class="mx-auto h-16 w-auto">
             <div class="mt-4">
@@ -54,11 +57,17 @@
                 <p class="text-sm text-gray-600">Comunicador Visual</p>
             </div>
             <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2 mt-8">Discovery Blueprint</h1>
-            <p class="text-xl text-gray-600">Creación de Marca para Restaurantes</p>
-            <p class="mt-4 text-gray-500 max-w-2xl mx-auto">Este documento es el cimiento de su marca. Sus respuestas detalladas nos permitirán construir una identidad visual y verbal potente y auténtica.</p>
+            <!-- Subtítulo actualizado -->
+            <p class="text-xl text-gray-600">Creación de Marca Gastronómica Saludable</p>
+            <!-- Voz actualizada a primera persona -->
+            <p class="mt-4 text-gray-500 max-w-2xl mx-auto">Este documento es el cimiento de tu marca. Tus respuestas detalladas me permitirán construir una identidad visual y verbal potente y auténtica.</p>
         </header>
 
-        <form id="briefing-form">
+        <!-- 
+            CAMBIO IMPORTANTE: 
+            ¡Tu enlace de Formspree ha sido añadido!
+        -->
+        <form id="briefing-form" action="https://formspree.io/f/xwpwlkkl" method="POST">
 
             <!-- Fase 1: El Fundamento del Negocio -->
             <div id="fase1" class="form-section">
@@ -67,17 +76,27 @@
                 
                 <div class="input-group">
                     <label for="resumen-ejecutivo" class="block text-lg mb-2">1. El Resumen Ejecutivo</label>
-                    <p class="text-sm text-gray-500 mb-2">En no más de tres frases, ¿cuál es la gran idea detrás de este restaurante?</p>
-                    <textarea id="resumen-ejecutivo" name="resumen-ejecutivo" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                    <p class="text-sm text-gray-500 mb-2">En no más de tres frases, ¿cuál es la gran idea detrás de este negocio?</p>
+                    <!-- Ejemplo actualizado (menos específico) y en línea nueva -->
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Somos una panadería artesanal que usa masa madre. Nuestra misión es traer el pan de 'antes' al barrio. Queremos ser el olor a pan caliente de la mañana."
+                    </p>
+                    <textarea id="resumen-ejecutivo" name="resumen-ejecutivo" rows="4" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
                     <label for="metricas-exito" class="block text-lg mb-2">2. Métricas de Éxito</label>
-                    <p class="text-sm text-gray-500 mb-2">Más allá de la rentabilidad, ¿cómo se verá el éxito para esta marca dentro de un año? ¿Y en cinco años?</p>
+                    <p class="text-sm text-gray-500 mb-2">Más allá de las ventas, ¿cómo se verá el éxito para esta marca dentro de un año? ¿Y en cinco años?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Ser el local de referencia para 'el café de la mañana' en la zona", "Abrir una segunda sucursal", "Ser reconocidos por nuestra calidad en Instagram".
+                    </p>
                     <textarea id="metricas-exito" name="metricas-exito" rows="4" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
                     <label for="usp" class="block text-lg mb-2">3. El Concepto Único de Venta (USP)</label>
-                    <p class="text-sm text-gray-500 mb-2">Si un cliente solo pudiera recordar una cosa sobre su restaurante, ¿qué debería ser?</p>
+                    <p class="text-sm text-gray-500 mb-2">Si un cliente solo pudiera recordar una cosa sobre su marca, ¿qué debería ser?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "La única cafetería de especialidad que tuesta su propio grano en el local."
+                    </p>
                     <textarea id="usp" name="usp" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
             </div>
@@ -89,116 +108,157 @@
 
                 <div class="input-group">
                     <label for="historia-origen" class="block text-lg mb-2">4. La Historia de Origen</label>
-                    <p class="text-sm text-gray-500 mb-2">Toda gran marca tiene una historia. ¿Cuál es la suya? ¿Qué inspiración, viaje o pasión le llevó a crear este concepto?</p>
-                    <textarea id="historia-origen" name="historia-origen" rows="4" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                    <p class="text-sm text-gray-500 mb-2">Toda gran marca tiene una historia. ¿Cuál es la suya? ¿Qué inspiración (¡o frustración!) les llevó a crear este concepto?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Como pareja, amamos la pizza, pero no encontrábamos opciones gourmet de verdad. Decidimos crear el lugar al que nosotros mismos querríamos ir: ingredientes increíbles, ambiente cool y buena música."
+                    </p>
+                    <textarea id="historia-origen" name="historia-origen" rows="5" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
                     <label for="arquetipo-marca" class="block text-lg mb-2">5. Arquetipo de Marca</label>
-                    <p class="text-sm text-gray-500 mb-2">Si su restaurante fuera una persona, ¿cómo la describiría? (Ej: El anfitrión carismático, el artista innovador, el sabio tradicional).</p>
+                    <p class="text-sm text-gray-500 mb-2">Si su marca fuera una persona, ¿cómo la describiría?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "El anfitrión amigable", "El artesano meticuloso", "El explorador culinario", "El amigo divertido".
+                    </p>
                     <textarea id="arquetipo-marca" name="arquetipo-marca" rows="4" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
                     <label for="valores-fundamentales" class="block text-lg mb-2">6. Los Valores Fundamentales</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Cuáles son los 3-5 valores no negociables de la marca? (Ej: Comunidad, Calidad, Sostenibilidad, Innovación).</p>
+                    <p class="text-sm text-gray-500 mb-2">¿Cuáles son los 3-5 valores no negociables de la marca?</p>
+                     <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Calidad", "Transparencia", "Sostenibilidad", "Comunidad", "Sabor", "Servicio".
+                    </p>
                     <textarea id="valores-fundamentales" name="valores-fundamentales" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
                     <label class="block text-lg mb-2">7. Tono de Voz</label>
                     <p class="text-sm text-gray-500 mb-2">¿Cómo se comunica la marca? Marque las opciones que apliquen y describa.</p>
+                    <!-- Opciones de Tono actualizadas -->
                     <div class="space-y-2 mt-3">
-                        <div class="flex items-center"><input type="checkbox" id="tono-elegante" name="tono" value="Elegante y sofisticado" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"><label for="tono-elegante" class="ml-3 block text-sm text-gray-900">Elegante y sofisticado</label></div>
-                        <div class="flex items-center"><input type="checkbox" id="tono-amigable" name="tono" value="Cercano y amigable" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"><label for="tono-amigable" class="ml-3 block text-sm text-gray-900">Cercano y amigable</label></div>
-                        <div class="flex items-center"><input type="checkbox" id="tono-irreverente" name="tono" value="Divertido e irreverente" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"><label for="tono-irreverente" class="ml-3 block text-sm text-gray-900">Divertido e irreverente</label></div>
-                        <div class="flex items-center"><input type="checkbox" id="tono-educativo" name="tono" value="Educativo y apasionado" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"><label for="tono-educativo" class="ml-3 block text-sm text-gray-900">Educativo y apasionado</label></div>
-                        <div class="flex items-center"><input type="checkbox" id="tono-minimalista" name="tono" value="Directo y minimalista" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"><label for="tono-minimalista" class="ml-3 block text-sm text-gray-900">Directo y minimalista</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="tono-cercano" name="tono" value="Cercano y amigable" class="h-4 w-4 rounded"><label for="tono-cercano" class="ml-3">Cercano y amigable ("¡Hola! ¿listo para tu pedido?")</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="tono-educativo" name="tono" value="Educativo y consciente" class="h-4 w-4 rounded"><label for="tono-educativo" class="ml-3">Educativo y consciente ("¿Sabías que nuestra masa...")</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="tono-vibrante" name="tono" value="Energético y vibrante" class="h-4 w-4 rounded"><label for="tono-vibrante" class="ml-3">Energético y vibrante ("¡Disfruta con todo!")</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="tono-relajado" name="tono" value="Relajado y enfocado en el bienestar" class="h-4 w-4 rounded"><label for="tono-relajado" class="ml-3">Relajado y enfocado en el bienestar ("Tu momento del día")</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="tono-minimalista" name="tono" value="Directo y minimalista" class="h-4 w-4 rounded"><label for="tono-minimalista" class="ml-3">Directo y minimalista ("Bueno. Simple. Real.")</label></div>
                     </div>
                     <textarea name="tono-descripcion" rows="2" class="w-full p-3 border border-gray-300 rounded-md mt-3" placeholder="Describa con más detalle..."></textarea>
                 </div>
                 <div class="input-group">
                     <label class="block text-lg mb-2">8. La Metáfora</label>
                     <p class="text-sm text-gray-500 mb-2">Complete estas frases para ayudarnos a capturar la esencia.</p>
-                    <input type="text" name="metafora-restaurante" class="w-full p-3 border border-gray-300 rounded-md mb-3" placeholder="Este restaurante es como un/una...">
-                    <input type="text" name="metafora-pelicula" class="w-full p-3 border border-gray-300 rounded-md mb-3" placeholder="Si fuera una película o libro, sería...">
-                    <input type="text" name="metafora-banda-sonora" class="w-full p-3 border border-gray-300 rounded-md" placeholder="La banda sonora incluiría a...">
+                    <!-- Placeholders actualizados -->
+                    <input type="text" name="metafora-marca" class="w-full p-3 border border-gray-300 rounded-md mb-3" placeholder="Esta marca se siente como...">
+                    <input type="text" name="metafora-atleta" class="w-full p-3 border border-gray-300 rounded-md mb-3" placeholder="Si fuera un chef o un artista, sería...">
+                    <input type="text" name="metafora-banda-sonora" class="w-full p-3 border border-gray-300 rounded-md" placeholder="La banda sonora del local incluiría a...">
                 </div>
             </div>
 
-            <!-- Fase 3: El Concepto Culinario -->
+            <!-- Fase 3: El Menú y los Ingredientes -->
             <div id="fase3" class="form-section">
-                <h2 class="text-3xl font-bold mb-6">Fase 3: El Concepto Culinario</h2>
-                <p class="text-gray-600 mb-8 -mt-4">La comida es la protagonista. Necesitamos entender su filosofía y oferta.</p>
+                <h2 class="text-3xl font-bold mb-6">Fase 3: El Menú y los Ingredientes</h2>
+                <p class="text-gray-600 mb-8 -mt-4">Los productos son los héroes de la historia. Necesitamos entender su propósito y origen.</p>
                 <div class="input-group">
-                    <label for="filosofia-cocina" class="block text-lg mb-2">9. La Filosofía del Chef/Cocina</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Cuál es el enfoque culinario? (Ej: Farm-to-table, cocina de autor, tradicional con un giro, fusión).</p>
-                    <textarea id="filosofia-cocina" name="filosofia-cocina" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                    <label for="filosofia-culinaria" class="block text-lg mb-2">9. La Filosofía Culinaria</label>
+                    <p class="text-sm text-gray-500 mb-2">¿Cuál es el enfoque de su menú?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "100% local", "Orgánico", "Vegano", "'Zero waste'", "Enfocado en superalimentos", "Comida reconfortante (comfort food)".
+                    </p>
+                    <textarea id="filosofia-culinaria" name="filosofia-culinaria" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
-                    <label for="platos-estrella" class="block text-lg mb-2">10. Platos Estrella</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Cuáles serán los 3-5 platos icónicos por los que la gente volverá? Descríbalos.</p>
-                    <textarea id="platos-estrella" name="platos-estrella" rows="4" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                    <label for="productos-estrella" class="block text-lg mb-2">10. Productos Estrella (Hero Products)</label>
+                    <p class="text-sm text-gray-500 mb-2">¿Cuáles serán los 3-5 productos icónicos por los que la marca será conocida?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "El 'Croissant de Almendras'", "El 'Café Cold Brew 24h'", "La 'Pizza de Hongos Trufados'".
+                    </p>
+                    <textarea id="productos-estrella" name="productos-estrella" rows="4" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
-                    <label for="origen-ingredientes" class="block text-lg mb-2">11. Origen de los Ingredientes</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Hay alguna historia que contar sobre sus ingredientes? ¿Trabaja con proveedores locales? ¿Es la sostenibilidad un factor clave?</p>
-                    <textarea id="origen-ingredientes" name="origen-ingredientes" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                    <label for="ingredientes-proveedores" class="block text-lg mb-2">11. Ingredientes y Proveedores</label>
+                    <p class="text-sm text-gray-500 mb-2">¿Qué historia cuentan sus ingredientes? ¿Hay algún proveedor local que quieran destacar?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Harina 100% italiana", "Colaboramos con fincas locales para nuestros vegetales", "Mermelada artesanal hecha en casa".
+                    </p>
+                    <textarea id="ingredientes-proveedores" name="ingredientes-proveedores" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                  <div class="input-group">
-                    <label for="menu-bebidas" class="block text-lg mb-2">12. Menú y Bebidas</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Qué experiencia ofrece la carta de bebidas? (Ej: Cocktails de autor, vinos, cervezas artesanales).</p>
-                    <textarea id="menu-bebidas" name="menu-bebidas" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                    <label for="proceso-preparacion" class="block text-lg mb-2">12. Proceso de Preparación</label>
+                    <p class="text-sm text-gray-500 mb-2">¿Dónde y cómo se preparan los alimentos?</p>
+                     <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Todo hecho al momento", "Horneado cada mañana", "'Grab-and-go'", "Cocina abierta al público".
+                    </p>
+                    <textarea id="proceso-preparacion" name="proceso-preparacion" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
             </div>
 
-            <!-- Fase 4: La Atmósfera y la Experiencia -->
+            <!-- Fase 4: La Experiencia del Cliente -->
             <div id="fase4" class="form-section">
-                <h2 class="text-3xl font-bold mb-6">Fase 4: La Atmósfera y la Experiencia</h2>
-                <p class="text-gray-600 mb-8 -mt-4">El branding es cada punto de contacto con el cliente.</p>
+                <h2 class="text-3xl font-bold mb-6">Fase 4: La Experiencia del Cliente</h2>
+                <p class="text-gray-600 mb-8 -mt-4">El branding es cada punto de contacto, desde la puerta hasta el último sorbo.</p>
                 <div class="input-group">
                     <label for="viaje-cliente" class="block text-lg mb-2">13. El Viaje del Cliente</label>
-                    <p class="text-sm text-gray-500 mb-2">Describa la experiencia ideal desde que un cliente descubre el restaurante online hasta que sale por la puerta.</p>
-                    <textarea id="viaje-cliente" name="viaje-cliente" rows="4" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                    <p class="text-sm text-gray-500 mb-2">Describa la experiencia ideal desde que alguien ve una foto en Instagram hasta que prueba el producto.</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Descubre una foto de un croissant. Entra al local y huele a mantequilla y café. Es recibido con una sonrisa. Pide fácilmente. Recibe su café en una taza de cerámica bonita. El sabor es increíble y se queda a leer un rato."
+                    </p>
+                    <textarea id="viaje-cliente" name="viaje-cliente" rows="5" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
-                    <label for="diseno-ambiente" class="block text-lg mb-2">14. Diseño de Interiores y Ambiente</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Qué sensación transmite el espacio? Use palabras clave. (Ej: Industrial chic, bohemio, minimalista nórdico).</p>
-                    <textarea id="diseno-ambiente" name="diseno-ambiente" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                    <label for="puntos-venta" class="block text-lg mb-2">14. Puntos de Venta</label>
+                    <p class="text-sm text-gray-500 mb-2">¿Dónde se venderá el producto?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Local físico", "Delivery propio", "Rappi/PedidosYa", "Catering para eventos", "Pop-ups en ferias".
+                    </p>
+                    <textarea id="puntos-venta" name="puntos-venta" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
-                    <label for="estilo-servicio" class="block text-lg mb-2">15. El Estilo de Servicio</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Cómo interactúa el personal con los clientes? (Ej: Formal y discreto, casual y conversador, eficiente y rápido).</p>
-                    <textarea id="estilo-servicio" name="estilo-servicio" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                    <label for="packaging-unboxing" class="block text-lg mb-2">15. Packaging</label>
+                    <p class="text-sm text-gray-500 mb-2">¿Qué sensación debe transmitir el empaque?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Ecológico y compostable", "Minimalista y funcional", "'Instagrameable'", "Premium y lujoso".
+                    </p>
+                    <textarea id="packaging-unboxing" name="packaging-unboxing" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
-                    <label for="cinco-sentidos" class="block text-lg mb-2">16. Los 5 Sentidos</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Cómo se manifestará la marca en cada sentido? (Vista, oído, olfato, tacto, gusto).</p>
+                    <label for="cinco-sentidos" class="block text-lg mb-2">16. Los 5 Sentidos (¡Clave!)</label>
+                    <p class="text-sm text-gray-500 mb-2">¿Cómo se manifestará la marca en cada sentido?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Vista: Colores cálidos, madera, menús bien diseñados. Oído: Música jazz suave, el sonido de la máquina de espresso. Olfato: Olor a café recién molido y pan. Tacto: Servilletas gruesas. Gusto: El balance perfecto de amargo y dulce."
+                    </p>
                     <textarea id="cinco-sentidos" name="cinco-sentidos" rows="5" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
             </div>
 
-            <!-- Fase 5: El Comensal Ideal -->
+            <!-- Fase 5: El Cliente Ideal -->
             <div id="fase5" class="form-section">
-                <h2 class="text-3xl font-bold mb-6">Fase 5: El Comensal Ideal</h2>
-                <p class="text-gray-600 mb-8 -mt-4">No podemos atraer a todos. ¿A quién queremos enamorar?</p>
+                <h2 class="text-3xl font-bold mb-6">Fase 5: El Cliente Ideal</h2>
+                <p class="text-gray-600 mb-8 -mt-4">No podemos atraer a todos. ¿Para quién estamos cocinando?</p>
                 <div class="input-group">
                     <label for="perfil-demografico" class="block text-lg mb-2">17. Perfil Demográfico</label>
-                    <p class="text-sm text-gray-500 mb-2">Edad, ingresos, profesión, barrio de residencia.</p>
+                    <p class="text-sm text-gray-500 mb-2">Edad, ingresos, profesión, ubicación.</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Jóvenes profesionales y 'creativos', 25-40 años, viven o trabajan cerca, ingresos medios-altos".
+                    </p>
                     <textarea id="perfil-demografico" name="perfil-demografico" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
                     <label for="perfil-psicografico" class="block text-lg mb-2">18. Perfil Psicográfico</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Qué valora esta persona? ¿Sus hobbies? ¿Qué otras marcas consume? ¿Qué busca al salir a comer?</p>
-                    <textarea id="perfil-psicografico" name="perfil-psicografico" rows="4" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                    <p class="text-sm text-gray-500 mb-2">¿Qué valora esta persona? ¿Sus hobbies? ¿Qué otras marcas consume? ¿Qué le motiva?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Valora la calidad y la estética. Le gusta el diseño, el arte y viajar. Compra en marcas independientes. Le motiva descubrir 'joyas ocultas' en la ciudad. Sigue a 'foodies' en Instagram."
+                    </p>
+                    <textarea id="perfil-psicografico" name="perfil-psicografico" rows="5" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
-                    <label class="block text-lg mb-2">19. Ocasión de Consumo</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Para qué ocasión elegirían su restaurante?</p>
+                    <label class="block text-lg mb-2">19. Ocasión de Uso</label>
+                    <p class="text-sm text-gray-500 mb-2">¿Para qué momento o actividad comprarían sus productos?</p>
+                    <!-- Ocasiones de uso actualizadas -->
                     <div class="space-y-2 mt-3">
-                        <div class="flex items-center"><input type="checkbox" id="ocasion-negocios" name="ocasion" value="Comida de negocios" class="h-4 w-4 rounded"><label for="ocasion-negocios" class="ml-3">Comida de negocios</label></div>
-                        <div class="flex items-center"><input type="checkbox" id="ocasion-romantica" name="ocasion" value="Cena romántica" class="h-4 w-4 rounded"><label for="ocasion-romantica" class="ml-3">Cena romántica</label></div>
-                        <div class="flex items-center"><input type="checkbox" id="ocasion-amigos" name="ocasion" value="Salida casual con amigos" class="h-4 w-4 rounded"><label for="ocasion-amigos" class="ml-3">Salida casual con amigos</label></div>
-                        <div class="flex items-center"><input type="checkbox" id="ocasion-familiar" name="ocasion" value="Celebración familiar" class="h-4 w-4 rounded"><label for="ocasion-familiar" class="ml-3">Celebración familiar</label></div>
-                        <div class="flex items-center"><input type="checkbox" id="ocasion-capricho" name="ocasion" value="Darme un capricho" class="h-4 w-4 rounded"><label for="ocasion-capricho" class="ml-3">"Darme un capricho"</label></div>
-                        <div class="flex items-center"><input type="checkbox" id="ocasion-brunch" name="ocasion" value="Brunch de fin de semana" class="h-4 w-4 rounded"><label for="ocasion-brunch" class="ml-3">Brunch de fin de semana</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="ocasion-desayuno" name="ocasion" value="Desayuno rápido de camino al trabajo" class="h-4 w-4 rounded"><label for="ocasion-desayuno" class="ml-3">Desayuno rápido (camino al trabajo)</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="ocasion-post-gym" name="ocasion" value="Reunión de trabajo casual" class="h-4 w-4 rounded"><label for="ocasion-post-gym" class="ml-3">Reunión de trabajo casual</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="ocasion-almuerzo" name="ocasion" value="Almuerzo ligero" class="h-4 w-4 rounded"><label for="ocasion-almuerzo" class="ml-3">Almuerzo ligero</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="ocasion-snack" name="ocasion" value="Cita de café" class="h-4 w-4 rounded"><label for="ocasion-snack" class="ml-3">Cita de café / Snack de tarde</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="ocasion-antojo" name="ocasion" value="Antojo dulce de fin de semana" class="h-4 w-4 rounded"><label for="ocasion-antojo" class.ml-3">Antojo dulce (fin de semana)</label></div>
                     </div>
                 </div>
             </div>
@@ -209,17 +269,26 @@
                 <p class="text-gray-600 mb-8 -mt-4">Entender el paisaje local para diferenciarse.</p>
                 <div class="input-group">
                     <label for="competencia-directa" class="block text-lg mb-2">20. Competencia Directa</label>
-                    <p class="text-sm text-gray-500 mb-2">Nombre 3-5 restaurantes competidores en su zona. ¿Qué hacen bien y mal?</p>
+                    <p class="text-sm text-gray-500 mb-2">Nombre 3-5 marcas/locales que compiten por el mismo cliente. ¿Qué hacen bien y mal?</p>
+                     <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "La panadería de la esquina", "Otra cafetería de especialidad", "Starbucks".
+                    </p>
                     <textarea id="competencia-directa" name="competencia-directa" rows="4" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
                     <label for="competencia-aspiracional" class="block text-lg mb-2">21. Competencia Aspiracional</label>
-                    <p class="text-sm text-gray-500 mb-2">Nombre 1-3 restaurantes (de cualquier lugar) que admire. ¿Qué le inspira de su marca?</p>
+                    <p class="text-sm text-gray-500 mb-2">Nombre 1-3 marcas (de cualquier sector, locales o internacionales) que admire. ¿Qué le inspira de ellas?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "La estética de 'Blue Bottle Coffee'", "La comunidad de 'Crossfit XYZ'", "El servicio de 'Apple'".
+                    </p>
                     <textarea id="competencia-aspiracional" name="competencia-aspiracional" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="input-group">
                     <label for="hueco-mercado" class="block text-lg mb-2">22. El Hueco en el Mercado</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Qué necesidad o deseo del público local no está siendo satisfecho? ¿Cómo lo llenará su marca?</p>
+                    <p class="text-sm text-gray-500 mb-2">¿Qué necesidad o deseo del público local no está siendo satisfecho? ¿Cómo lo llenará la suya?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "No hay opciones de calidad que abran temprano", "Nadie ofrece verdaderas opciones de pastelería francesa".
+                    </p>
                     <textarea id="hueco-mercado" name="hueco-mercado" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
             </div>
@@ -228,32 +297,50 @@
             <div id="fase7" class="form-section">
                 <h2 class="text-3xl font-bold mb-6">Fase 7: La Expresión Visual y Verbal</h2>
                 <p class="text-gray-600 mb-8 -mt-4">Sentando las bases para el trabajo de diseño.</p>
+                
+                <!-- Pregunta 23 ACTUALIZADA -->
                 <div class="input-group">
                     <label for="moodboard" class="block text-lg mb-2">23. Inspiración Visual (Mood Board)</label>
-                    <p class="text-sm text-gray-500 mb-2">Pegue aquí un enlace a un tablero de Pinterest o a una carpeta de imágenes que refleje la estética deseada.</p>
-                    <input type="url" id="moodboard" name="moodboard" class="w-full p-3 border border-gray-300 rounded-md" placeholder="https://pinterest.com/tu-tablero">
+                    <p class="text-sm text-gray-500 mb-2">Este es un paso crucial. ¿Cuál es la estética deseada? Puedes pegar un enlace aquí (Pinterest, Google Drive) o indicarme si prefieres enviarme las imágenes (.jpg, .png) por correo o WhatsApp.</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "https://pinterest.com/mi-tablero" o "Te envié una carpeta .zip al correo con 10 fotos de referencia."
+                    </p>
+                    <textarea id="moodboard" name="moodboard" rows="3" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Pega tu enlace aquí o describe cómo me enviarás la inspiración..."></textarea>
                 </div>
+
                 <div class="input-group">
                     <label for="palabras-clave-visuales" class="block text-lg mb-2">24. Palabras Clave Visuales</label>
-                    <p class="text-sm text-gray-500 mb-2">Elija 5 adjetivos que deberían describir la identidad visual final. (Ej: Atemporal, Terrenal, Vibrante, Sofisticado, Artesanal).</p>
+                    <p class="text-sm text-gray-500 mb-2">Elija 5 adjetivos que deberían describir la identidad visual final.</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Fresco", "Natural", "Vibrante", "Limpio", "Artesanal", "Urbano", "Cálido", "Minimalista".
+                    </p>
                     <input type="text" id="palabras-clave-visuales" name="palabras-clave-visuales" class="w-full p-3 border border-gray-300 rounded-md">
                 </div>
                 <div class="input-group">
                     <label for="prohibiciones" class="block text-lg mb-2">25. Mandatos y Prohibiciones</label>
-                    <p class="text-sm text-gray-500 mb-2">¿Hay algún color, símbolo, estilo o elemento que debamos evitar a toda costa? ¿Alguna mala experiencia pasada?</p>
+                    <p class="text-sm text-gray-500 mb-2">¿Hay algún color, símbolo, estilo o elemento que debamos evitar a toda costa?</p>
+                    <p class="text-sm text-gray-400 italic -mt-1 mb-2">
+                        Ej: "Nada de color marrón", "Evitar tipografías que parezcan infantiles", "No usar fotos de stock genéricas".
+                    </p>
                     <textarea id="prohibiciones" name="prohibiciones" rows="3" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
                 </div>
             </div>
 
-            <!-- Botón de Generación -->
+            <!-- Botón de Envío -->
             <div class="mt-12 text-center">
-                <button type="button" id="generate-docx" class="bg-indigo-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    Generar y Descargar .docx
+                <!-- 
+                  NOTA: Este botón ahora es type="submit" 
+                  y se ha eliminado el botón de .docx
+                -->
+                <button type="submit" id="submit-button" class="bg-indigo-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Enviar Respuestas
                 </button>
+                <!-- Mensaje de estado para el envío -->
+                <p id="form-status" class="text-lg mt-4"></p>
             </div>
         </form>
 
-        <!-- Footer -->
+        <!-- Footer (Se mantiene tu marca) -->
         <footer class="text-center mt-16 pt-8 border-t border-gray-300">
             <p class="font-bold text-gray-800">Juan Luis Medero - Comunicador Visual</p>
             <p class="text-gray-600">Maracay, Aragua, Venezuela 2101</p>
@@ -261,76 +348,73 @@
         </footer>
     </div>
 
+    <!-- 
+        SCRIPT ACTUALIZADO:
+        Toda la lógica de .docx ha sido eliminada.
+        Este nuevo script maneja el envío del formulario a Formspree 
+        y muestra un mensaje de "Gracias" sin recargar la página.
+    -->
     <script>
-        document.getElementById('generate-docx').addEventListener('click', function() {
-            const form = document.getElementById('briefing-form');
-            const formData = new FormData(form);
-            const data = {};
+        var form = document.getElementById("briefing-form");
+        var status = document.getElementById("form-status");
+        var button = document.getElementById("submit-button");
+        
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var data = new FormData(event.target);
             
-            const fieldLabels = {
-                'resumen-ejecutivo': '1. El Resumen Ejecutivo', 'metricas-exito': '2. Métricas de Éxito', 'usp': '3. El Concepto Único de Venta (USP)',
-                'historia-origen': '4. La Historia de Origen', 'arquetipo-marca': '5. Arquetipo de Marca', 'valores-fundamentales': '6. Los Valores Fundamentales', 'tono': '7. Tono de Voz (Selección)', 'tono-descripcion': '7. Tono de Voz (Descripción)', 'metafora-restaurante': '8. Metáfora (Restaurante)', 'metafora-pelicula': '8. Metáfora (Película/Libro)', 'metafora-banda-sonora': '8. Metáfora (Banda Sonora)',
-                'filosofia-cocina': '9. La Filosofía del Chef/Cocina', 'platos-estrella': '10. Platos Estrella', 'origen-ingredientes': '11. Origen de los Ingredientes', 'menu-bebidas': '12. Menú y Bebidas',
-                'viaje-cliente': '13. El Viaje del Cliente', 'diseno-ambiente': '14. Diseño de Interiores y Ambiente', 'estilo-servicio': '15. El Estilo de Servicio', 'cinco-sentidos': '16. Los 5 Sentidos',
-                'perfil-demografico': '17. Perfil Demográfico', 'perfil-psicografico': '18. Perfil Psicográfico', 'ocasion': '19. Ocasión de Consumo',
-                'competencia-directa': '20. Competencia Directa', 'competencia-aspiracional': '21. Competencia Aspiracional', 'hueco-mercado': '22. El Hueco en el Mercado',
-                'moodboard': '23. Inspiración Visual (Mood Board)', 'palabras-clave-visuales': '24. Palabras Clave Visuales', 'prohibiciones': '25. Mandatos y Prohibiciones'
-            };
+            // Cambiar el estado del botón a "Enviando..."
+            button.disabled = true;
+            button.innerText = "Enviando...";
+            button.classList.add("opacity-50", "cursor-not-allowed");
+            status.innerText = "";
 
-            for (let [key, value] of formData.entries()) {
-                if (data[key]) {
-                    if (Array.isArray(data[key])) {
-                        data[key].push(value);
-                    } else {
-                        data[key] = [data[key], value];
-                    }
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Éxito
+                    status.innerText = "¡Gracias! Tus respuestas han sido enviadas con éxito.";
+                    status.className = "text-lg mt-4 text-green-600 font-medium";
+                    // Limpiamos el formulario y ocultamos el botón
+                    form.reset(); 
+                    button.style.display = 'none'; 
+                    // Opcional: Ocultar todo el formulario
+                    // form.style.display = 'none'; 
                 } else {
-                    data[key] = value;
+                    // Error en Formspree (ej. endpoint mal configurado)
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerText = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            status.innerText = "Oops! Hubo un problema al enviar el formulario.";
+                        }
+                        status.className = "text-lg mt-4 text-red-600 font-medium";
+                        // Reactivar el botón
+                        button.disabled = false;
+                        button.innerText = "Enviar Respuestas";
+                        button.classList.remove("opacity-50", "cursor-not-allowed");
+                    })
                 }
-            }
-
-            let contentHtml = `<div style="font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5;">
-                <header style="text-align: center; border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 30px;">
-                    <h1 style="font-family: 'Times New Roman', serif; font-size: 24pt; margin: 0;">Discovery Blueprint</h1>
-                    <p style="font-size: 14pt; color: #555; margin: 5px 0 0 0;">Respuestas del Cliente</p>
-                </header>
-                <main>`;
-
-            const fieldOrder = Object.keys(fieldLabels);
-
-            fieldOrder.forEach(key => {
-                let value = data[key];
-                if (value) {
-                    if (Array.isArray(value)) {
-                        value = value.join(', ');
-                    }
-                    contentHtml += `
-                        <h3 style="font-family: 'Times New Roman', serif; font-size: 14pt; color: #333; margin-top: 20px; margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 4px;">${fieldLabels[key]}</h3>
-                        <p style="font-size: 11pt; color: #000; margin-top: 0; white-space: pre-wrap;">${value}</p>
-                    `;
-                }
+            }).catch(error => {
+                // Error de red
+                status.innerText = "Oops! Hubo un problema de red. Por favor, intenta de nuevo.";
+                status.className = "text-lg mt-4 text-red-600 font-medium";
+                // Reactivar el botón
+                button.disabled = false;
+                button.innerText = "Enviar Respuestas";
+                button.classList.remove("opacity-50", "cursor-not-allowed");
             });
-
-            contentHtml += `</main>
-                <footer style="text-align: center; border-top: 1px solid #ccc; padding-top: 10px; margin-top: 40px; font-size: 9pt; color: #777;">
-                    <p><strong>Juan Luis Medero - Comunicador Visual</strong></p>
-                    <p>Maracay, Aragua, Venezuela 2101</p>
-                    <p>+58 412 199 2302 | Instagram: @mederogram</p>
-                </footer>
-            </div>`;
-
-            var converted = htmlDocx.asBlob(contentHtml, {
-                orientation: 'portrait',
-                margins: {
-                    top: 720, // 1 inch
-                    right: 720,
-                    bottom: 720,
-                    left: 720,
-                }
-            });
-            saveAs(converted, 'Briefing_Restaurante_Completado.docx');
-        });
+        }
+        
+        form.addEventListener("submit", handleSubmit);
     </script>
 
 </body>
 </html>
+
+
